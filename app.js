@@ -62,20 +62,17 @@ document.getElementById('calculateScore').addEventListener('click', function() {
         .then(response => response.json())
         .then(data => {
             const { specialQuestions } = data;
+            const regularScores = [3, 2, 1, 0];
+            const specialScores = [0, 1, 2, 3];
 
             for (let i = 0; i < questionsCount; i++) {
                 const selectedOption = document.querySelector(`input[name="question_${i}"]:checked`);
                 if (selectedOption) {
                     answered++;
                     const optionIndex = Number(selectedOption.value);
-                    if (specialQuestions.includes(i)) {
-                        score += 3 - optionIndex;
-                    } else {
-                        score += optionIndex;
-                    }
+                    score += specialQuestions.includes(i + 1) ? specialScores[optionIndex] : regularScores[optionIndex];
                 }
             }
-
 
         if (answered !== questionsCount) {
             scoreDisplay.textContent = "Please answer all the questions!";
