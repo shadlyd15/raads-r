@@ -1,0 +1,85 @@
+/* Universal Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Logo and Heading */
+.logo {
+    width: 100%;  
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+h2 {
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Styling */
+.description, .cautionary-note {
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.description p, .cautionary-note p {
+    text-align: justify;
+}
+
+.description .lead, .cautionary-note .lead {
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Question Styling */
+.question p {
+    font-weight: bold;
+    color: #007BF0;
+    font-size: 1.1em;
+/*    border-bottom: 2px solid #007BFF;*/
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Buttons and Result Display */
+#calculateScore {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#calculateScore:hover {
+    background-color: #0056b3;
+}
+
+#scoreDisplay {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+}

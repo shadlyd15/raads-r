@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAADS–R</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Logo centered at the top -->
+        <div class="text-center mb-4">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+
+        <h2 class="text-center mb-4">Ritvo Autism Asperger Diagnostic Scale-Revised (RAADS-R)</h2>
+
+        <!-- RAADS-R Description -->
+        <div class="description bg-light p-4 rounded mb-4">
+            <!-- <p class="lead text-center">What is RAADS-R?</p> -->
+            <p>The Ritvo Autism Asperger Diagnostic Scale-Revised (RAADS-R) is a tool used to assist the diagnosis of autism spectrum disorders in adults. It's designed to measure the presence and severity of autism-related symptoms. This self-test provides a preliminary measure and is not intended as a diagnostic tool.</p>
+        </div>
+
+
+        <div id="app">
+            <!-- Questions will be populated here using JavaScript -->
+        </div>
+    <!-- ... -->
+
+<div id="app">
+    <!-- Questions will be populated here using JavaScript -->
+</div>
+    <button id="calculateScore" class="btn btn-primary mt-3">Calculate Score</button>
+    <p id="scoreDisplay" class="mt-3"></p>
+
+    <div class="mt-5">
+        <h3>Meaning of RAADS–R scores</h3>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Score</th>
+                    <th>Interpretation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25</td>
+                    <td>You are not autistic.</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>Some autistic traits, but likely not autistic (yet some autistic people score as low as 44).</td>
+                </tr>
+                <tr>
+                    <td>65</td>
+                    <td>The minimum score at which autism is considered.</td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td>Stronger indications of autism, although non-autistics may score as high.</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td>The mean score of autistic people; strong evidence for autism.</td>
+                </tr>
+                <tr>
+                    <td>160</td>
+                    <td>Very strong evidence for autism.</td>
+                </tr>
+                <tr>
+                    <td>227</td>
+                    <td>The maximum score autistic people acquired in Ritvo’s seminal paper on the RAADS–R.</td>
+                </tr>
+                <tr>
+                    <td>240</td>
+                    <td>The maximum possible RAADS–R score.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Cautionary Note -->
+    <div class="cautionary-note mt-5 p-4 bg-danger text-white rounded">
+        <p class="lead text-center">Important Precaution</p>
+        <p>This test is a self-assessment tool and not a definitive diagnostic instrument. The results should be used as a reference and not as a final diagnosis. Autism spectrum disorders can only be diagnosed by qualified professionals. If your results indicate the possibility of an autism spectrum disorder, or if you have concerns about your mental well-being, please seek guidance from a medical professional or specialist.</p>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
